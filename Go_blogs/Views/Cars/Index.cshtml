@@ -1,0 +1,36 @@
+﻿@*@model List<Cars>*@
+
+<h1>Ini Controller Mobil</h1>
+
+<hr />
+
+@*<h1>@ViewBag.namaSaya</h1>
+<h1>@ViewData["nama"]</h1>*@
+@*<h1>@ViewBag.mobil</h1>*@
+
+<hr />
+
+@*<h1>@ViewBag.banyakMobil.IDRegistrasi</h1>
+<h1>@ViewBag.banyakMobil.Tipe</h1>
+<h1>@ViewBag.banyakMobil.Merk</h1>
+<h1>@ViewBag.banyakMobil.Varian</h1>*@
+
+@foreach (var data in ViewBag.banyakMobil)
+    {
+        <h2>@data.IDRegistrasi</h2>
+        <h2>@data.Tipe</h2>
+        <h2>@data.Merk</h2>
+        <h2>@data.Varian</h2>
+
+        <hr />
+    }
+
+@*@for (int x=0; x<3; x++){
+
+    <h1>IDRegistration : @Model[x].IDRegistrasi </h1>
+    <h1>Tipe : @Model[x].Tipe</h1>
+    <h1>Merk : @Model[x].Merk</h1>
+    <h1>Varian : @Model[x].Varian</h1>
+
+    <hr />
+}*@
